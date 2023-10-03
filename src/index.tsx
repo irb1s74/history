@@ -13,9 +13,7 @@ if (!container) {
 const root = createRoot(container)
 
 root.render(
-  <StrictMode>
-    <AppProvider>
-      <App />
-    </AppProvider>
-  </StrictMode>,
+  <AppProvider>
+    <App />
+  </AppProvider>,
 )
