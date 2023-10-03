@@ -36,6 +36,9 @@ export const Events = memo(() => {
   }, [period])
   return (
     <div className={cls.Events}>
+      <button id='previousSlideButton' className={cls.Events__slideBtn}>
+        <i style={{ transform: `rotate(135deg)` }} className={cls.Events__btnArrow} />
+      </button>
       <Swiper
         ref={eventsBlock}
         modules={[Navigation]}
@@ -67,6 +70,14 @@ export const Events = memo(() => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <button
+        id='nextSlideButton'
+        className={cls.Events__slideBtn}
+        style={{ right: '20px', left: 'auto' }}
+      >
+        <i className={cls.Events__btnArrow} />
+      </button>
     </div>
   )
 })

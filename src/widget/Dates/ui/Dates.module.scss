@@ -3,13 +3,13 @@
   max-width: 1440px;
   height: 100vh;
   margin: 0 auto;
-  //border-left: 1px solid var(--black-blue-color);
-  //border-right: 1px solid var(--black-blue-color);
 
   @media (max-width: 1200px) {
     border-left: none;
     border-right: none;
   }
+
+
 
   &__xVector {
     position: absolute;
@@ -18,7 +18,6 @@
     background-color: var(--black-blue-color);
     opacity: 0.1;
     top: 407px;
-    //z-index: -2;
 
     @media (max-width: 1440px) {
       top: 350px;

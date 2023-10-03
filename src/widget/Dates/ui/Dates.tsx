@@ -4,6 +4,7 @@ import { CircularSlider } from 'feature/CircularSlider'
 import { CircularSliderText } from 'feature/CircularSliderText'
 import { Timeline } from 'feature/Timeline'
 import { Events } from 'feature/Events'
+import { SmallSlider } from 'feature/SmallSlider'
 import cls from './Dates.module.scss'
 
 export const Dates = memo(() => {
@@ -20,6 +21,7 @@ export const Dates = memo(() => {
       <Period />
       <Timeline />
       <Events />
+      <SmallSlider />
     </div>
   )
 })
