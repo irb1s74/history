@@ -1,0 +1,80 @@
+.Timeline {
+  width: 120px;
+  position: absolute;
+  top: 600px;
+  left: 80px;
+
+  @media (max-width: 1440px) {
+    top: 500px;
+  }
+
+  @media (max-width: 768px) {
+    top: 420px;
+    left: 40px;
+  }
+
+  @media (max-width: 600px) {
+    top: auto;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  @media (max-width: 425px) {
+    width: 60px;
+  }
+
+  &__currentPeriod {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+
+    @media (max-width: 425px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__periodSlideButtonsBlock {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__slideButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(66, 86, 122, 0.5);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 425px) {
+      width: 25px;
+      height: 25px;
+    }
+
+    &:hover {
+      background: #fffefe;
+    }
+
+    &:disabled {
+      background-color: transparent;
+      cursor: default;
+      border: 1px solid #42567A1A;
+    }
+  }
+
+  &__ButtonArrow {
+    border: solid var(--black-blue-color);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+
+    @media (max-width: 425px) {
+      padding: 2px;
+    }
+  }
+}
